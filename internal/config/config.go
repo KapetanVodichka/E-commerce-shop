@@ -9,6 +9,7 @@ import (
 
 type Config struct {
 	Env        string `yaml:"env" env-default:"local"`
+	JWTSecret  string `yaml:"jwt_secret" env-default:"0hc2837hr2crh703rh238r2c3r8h329crh23c23"`
 	HTTPServer `yaml:"http_server"`
 	Database   `yaml:"database"`
 }
